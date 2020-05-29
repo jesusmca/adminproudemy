@@ -11,9 +11,8 @@ import { PAGES_ROUTES } from './pages.routes';
 
 //Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
-//Charts
-import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
     declarations: [
@@ -21,7 +20,8 @@ import { ChartsModule } from 'ng2-charts';
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        IncrementadorComponent
+        IncrementadorComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
@@ -31,9 +31,8 @@ import { ChartsModule } from 'ng2-charts';
     imports: [
         SharedModule,
         PAGES_ROUTES,
-        FormsModule,
-        ChartsModule
-    ]
+        FormsModule
+        ]
 })
 
 export class PagesModule { }
